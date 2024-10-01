@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>texSouring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/textile/logo.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- LOADING FONTS AND ICONS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="rev/fonts/font-awesome/css/font-awesome.css"
+    />
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="css/simplebar.min.css" />
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css" />
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css" />
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css" />
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Loading -->
+    <div id="pq-loading">
+      <div id="pq-loading-center">
+        <img src="images/logo.png" alt="loading" />
+      </div>
+    </div>
+    <!-- Loading -->
+    <a href="https://wa.me/1234567890" target="_blank" id="whatsapp-btn">
+      <img src="images/textile/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <!-- Header -->
+    <div class="pq-background-overlay"></div>
+
+    <header>
+      <div>
+        <div class="navbar navbar-fixed-top" style="height: 80px">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="#"></a>
+              <div class="navbar-brand">
+                <a href="#">
+                  <img
+                    width="150"
+                    height="100%"
+                    src="images/logo-white.png"
+                    alt="loading"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="burger">
+              <span></span>
+            </div>
+            <button class="inquire" id="inquireBtn">
+              <i class="fa-solid fa-phone"></i> &nbsp;Inquire now
+            </button>
+          </div>
+        </div>
+        <!-- /.navbar -->
+      </div>
+    
+      
+      <!-- Contact Form Modal -->
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      
+      <!-- Modal Styles -->
+    
+      <!-- JavaScript -->
+      <script>
+      // Get modal element
+      var modal = document.getElementById("contactModal");
+      
+      // Get open modal button
+      var btn = document.getElementById("inquireBtn");
+      
+      // Get close button
+      var closeBtn = document.getElementsByClassName("close")[0];
+      
+      // Listen for open click
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // Listen for close click
+      closeBtn.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // Listen for outside click to close modal
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <div class="overlay"></div>
+
+      <!--BURGER CONTENT START-->
+      <nav>
+        <ul id="menu-elysium" class="main">
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="#aboutus">About us</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="#whatwedo">What we do</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="#production">Production</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="#fundamental">Core</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="#testimonial">Testimonials</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-105 current_page_item"
+          >
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!--BURGER CONTENT START-->
+    </header>
+   
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container-home">
+        <!-- Video Background -->
+        <div class="video-background">
+          <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Gradient Overlay -->
+        <div class="gradient-overlay"></div>
+
+        <!-- Content Section -->
+        <div class="content" >
+          <!-- Icons Section -->
+          <div class="icon-container">
+            <i id="icon" class="fas fa-truck fa-4x"></i>
+            <!-- Initial icon -->
+          </div>
+
+          <!-- Quote Section -->
+          <p id="quote"></p>
+          <div id="quote-border"></div>
+          <!-- Bottom border for the quote -->
+
+          <!-- Additional Content Section -->
+          <div id="extra-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const data = [
+        {
+          quote: "WE DELIVER",
+          icon: "fas fa-truck",
+          content: "On Time",
+        },
+        {
+          quote: "COMMITTED IN",
+          icon: "fas fa-leaf",
+          content: "Sustainable Growth",
+        },
+        {
+          quote: "EXCELLENCE IN",
+          icon: "fas fa-star",
+          content: "Every Stitch",
+        },
+      ];
+
+      let currentIndex = 0;
+
+      function changeContent() {
+        const quoteElement = document.getElementById("quote");
+        const iconElement = document.getElementById("icon");
+        const contentElement = document.getElementById("extra-content");
+        const borderElement = document.getElementById("quote-border");
+
+        // Remove 'show' class to trigger fade out animation
+        quoteElement.classList.remove("show");
+        iconElement.classList.remove("show");
+        contentElement.classList.remove("show");
+        borderElement.classList.remove("show");
+
+        setTimeout(() => {
+          // Change quote, icon, and content after a small delay
+          const { quote, icon, content } = data[currentIndex];
+          quoteElement.textContent = quote;
+          iconElement.className = `${icon} fa-4x`; // Change Font Awesome icon class
+          contentElement.textContent = content;
+
+          // Reapply the 'show' class to trigger fade in animation
+          quoteElement.classList.add("show");
+          iconElement.classList.add("show");
+          contentElement.classList.add("show");
+          borderElement.classList.add("show");
+
+          // Update index for the next cycle
+          currentIndex = (currentIndex + 1) % data.length;
+        }, 500); // Delay to sync with the fade-out
+      }
+
+      // Change content every 3 seconds
+      setInterval(changeContent, 3000);
+      changeContent(); // Initial call to display the first set
+    </script>
+    
+    <!-- Banner -->
+
+    <!-- About Us -->
+    <section class="about-us" style="background-color: #f6f6f6" >
+      <div class="container"  data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="pq-about-us-img">
+              <img src="images/textile/1.jpg" class="pq-about-us-img-1 wow animated fadeInLeft" alt />
+              <img src="images/textile/3.jpg" class="pq-about-us-img-2 wow animated zoomIn" alt />
+            </div>
+          </div>
+          <div class="col-xl-6 mt-4 mt-xl-0 ps-xl-5 wow animated fadeInRight">
+            <div class="pq-section-title pq-style-1 pq-mb-30">
+              <h5 class="pq-section-main-title" id="build" style="text-align: start;">
+                Let’s Build Something Creative Together
+                <div class="underline"></div>
+              </h5>
+              <p class="pq-section-description">
+                Textiles are materials made from fibers or yarn, and they are
+                used to create a wide range of products such as clothing and
+                industrial goods.
+              </p>
+            </div>
+            <ul class="pq-list-check pq-mb-45">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Exploring the Role of Textiles in Human Society</span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>From Smart Fabrics to Wearable Electronics</span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Sustainable textile production practices</span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Balancing Environmental Economic</span>
+              </li>
+            </ul>
+            <a class="pq-button pq-button-flat"  onclick="openModal('about')">
+              <div class="pq-button-block">
+                READ MORE &nbsp;
+                <i class="fas fa-arrow-right fa-1x"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="about" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('about')">&times;</span>
+          <h3>About</h3>
+          <p>Here you can provide more detailed information about why Pakistan is important...</p>
+      </div>
+  </div>
+   
+    
+  <section style="background-color: #e9e9e9" class="section-tsi" id="aboutus">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="pq-section-title pq-style-1 text-center">
+          <h5 class="whytsi">
+            ABOUT US
+            <div class="underline"></div>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 pq-px-30">
+        <div class="pq-portfoliobox pq-portfoliobox-style-1 pq-slider-page">
+          <div
+            class="owl-carousel owl-loaded owl-drag"
+            data-dots="true"
+            data-nav="false"
+            data-desk_num="4"
+            data-lap_num="3"
+            data-tab_num="2"
+            data-mob_num="1"
+            data-mob_sm="1"
+            data-autoplay="false"
+            data-loop="false"
+            data-margin="30"
+          >
+          <div class="item" id="items">
+            <div
+              class="heading-overlay"
+              style="
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('images/textile/pakistan.jpg');
+              "
+            >
+              <h3>WHY PAKISTAN</h3>
+            </div>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur...</p>
+            <a class="pq-button pq-button-flat"  onclick="openModal('modal1')">
+              <div class="pq-button-block">
+                  READ MORE &nbsp;
+                  <i class="fas fa-arrow-right fa-1x"></i>
+              </div>
+          </a>
+          </div>
+          <div class="items" id="items">
+            <div
+              class="heading-overlay"
+              style="
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('images/textile/globally.jpg');
+              "
+            >
+              <h3>WHO WE ARE</h3>
+            </div>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur...</p>
+            <a class="pq-button pq-button-flat"   onclick="openModal('modal2')">
+              <div class="pq-button-block">
+                  READ MORE &nbsp;
+                  <i class="fas fa-arrow-right fa-1x"></i>
+              </div>
+          </a>
+          </div>
+          <div class="items" id="items">
+            <div
+              class="heading-overlay"
+              style="
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('images/textile/trust.jpg');
+              "
+            >
+              <h3>WHY WORK WITH US?</h3>
+            </div>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur...</p>
+            <a class="pq-button pq-button-flat"  onclick="openModal('modal3')">
+              <div class="pq-button-block">
+                  READ MORE &nbsp;
+                  <i class="fas fa-arrow-right fa-1x"></i>
+              </div>
+          </a>
+          </div>
+          <div class="items" id="items">
+            <div
+              class="heading-overlay"
+              style="
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('images/textile/uae.jpg');
+              "
+            >
+              <h3>WHY UAE</h3>
+            </div>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur...</p>
+            <a class="pq-button pq-button-flat"  onclick="openModal('modal4')" >
+              <div class="pq-button-block">
+                  READ MORE &nbsp;
+                  <i class="fas fa-arrow-right fa-1x"></i>
+              </div>
+          </a>
+          </div>
+          <div class="items" id="items">
+            <div
+              class="heading-overlay"
+              style="
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('images/textile/sustainabilty.jpg');
+              "
+            >
+              <h3>WHY CHOOSE TSI</h3>
+            </div>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur...</p>
+            <a class="pq-button pq-button-flat"  onclick="openModal('modal5')">
+              <div class="pq-button-block">
+                  READ MORE &nbsp;
+                  <i class="fas fa-arrow-right fa-1x"></i>
+              </div>
+          </a>
+          </div>
+            
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+ 
+    
+   
+  
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h3>More About Why Pakistan</h3>
+          <p>Here you can provide more detailed information about why Pakistan is important...</p>
+      </div>
+  </div>
+  
+  <div id="modal2" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h3>More About Who We Are</h3>
+          <p>Here you can provide more detailed information about your company, mission, etc...</p>
+      </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h3>More About Who We Are 3</h3>
+        <p>Here you can provide more detailed information about your company, mission, etc...</p>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h3>More About Who We Are 4</h3>
+      <p>Here you can provide more detailed information about your company, mission, etc...</p>
+  </div>
+</div>
+
+
+<style>
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5); /* Black with transparency */
+  } 
+  .modal-content h3{
+
+    font-family: "Roboto Condensed", sans-serif;  }
+
+  .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      font-family: "Poppins", sans-serif;
+      border: 1px solid #888;
+      width: 80%;
+  }
+  
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  </style>
+  
+  <!-- Add JavaScript for modal functionality -->
+  <script>
+  function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'block';
+  }
+  
+  function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+  }
+  
+  // Close modal when clicking outside of it
+  window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+          event.target.style.display = 'none';
+      }
+  }
+  </script>
+
+    <!-- Service -->
+    <section class="service pq-bg-grey" id="whatwedo" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 wow animated fadeInLeft">
+            <div class="pq-section-title pq-style-1 pq-mb-45">
+              <h5 class="pq-section-main-title">
+                Exploring the Role of Textiles
+                <div class="underline"></div>
+              </h5>
+              <p class="pq-section-description">
+                Textiles are materials made from fibers or yarn, and they are
+                used to create widetest range of products such as clothing and
+                industrial goods.
+              </p>
+            </div>
+            <a class="pq-button pq-button-link" href="javascript:void(0)" onclick="openModal('modal-overview')" tabindex="0">
+              <div class="pq-button-block">
+                <span class="pq-button-text">Read more</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="pq-svg-arrow"
+                  width="34.899"
+                  height="14.585"
+                  viewBox="0 0 34.899 14.585"
+                >
+                  <path
+                    d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                    transform="translate(34.399 14.056) rotate(180)"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-8 pq-ps-60 mt-4 mt-xl-0 wow animated fadeInRight">
+            <div class="service-slider pq-slider-1">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="pq-content-column">
+                    <div class="pq-content-column-inner">
+                      <div class="slick-slider-main">
+                        <div class="item" id="dyeing">
+                          <div class="pq-service-box pq-style-1" ;>
+                            <div class="pq-service-media">
+                              <img
+                                decoding="async"
+                                src="images/textile/fabric dyeing.jpeg"
+                                alt="servicebox"
+                              />
+                            </div>
+                            <div class="pq-service-box-info">
+                              <div class="pq-service-icon">
+                                <i class="flaticon-clothes"></i>
+                              </div>
+                              <h4 class="pq-service-box-title">
+                                fabric dyeing
+                              </h4>
+                              <p class="pq-service-box-description">
+                                Textiles that cannot rental tsestr be washed
+                                with wate These servi typically used wide range
+                                of products for delicate
+                              </p>
+                              <div class="pq-btn-container">
+                                <a class="pq-button pq-button-link" href="javascript:void(0)" onclick="openModal('modal-dyeing')" tabindex="0">
+
+                             
+                                  <div class="pq-button-block">
+                                    <span class="pq-button-text"
+                                      >Read more</span
+                                    >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="pq-svg-arrow"
+                                      width="34.899"
+                                      height="14.585"
+                                      viewBox="0 0 34.899 14.585"
+                                    >
+                                      <path
+                                        d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                                        transform="translate(34.399 14.056) rotate(180)"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item" id="printing">
+                          <div class="pq-service-box pq-style-1">
+                            <div class="pq-service-media">
+                              <img
+                                decoding="async"
+                                src="images/textile/digital.jpg"
+                                alt="servicebox"
+                              />
+                            </div>
+                            <div class="pq-service-box-info">
+                              <div class="pq-service-icon">
+                                <i class="flaticon-knitting"></i>
+                              </div>
+                              <h4 class="pq-service-box-title">
+                                digital printing
+                              </h4>
+                              <p class="pq-service-box-description">
+                                textiles that cannot rental tsestr be washed
+                                with wate These servi typically used wide range
+                                of products for delicate
+                              </p>
+                              <div class="pq-btn-container">
+                                <a class="pq-button pq-button-link" href="javascript:void(0)" onclick="openModal('modal-printing')" tabindex="0">
+
+                                  
+                                  <div class="pq-button-block">
+                                    <span class="pq-button-text"
+                                      >Read more</span
+                                    >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="pq-svg-arrow"
+                                      width="34.899"
+                                      height="14.585"
+                                      viewBox="0 0 34.899 14.585"
+                                    >
+                                      <path
+                                        d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                                        transform="translate(34.399 14.056) rotate(180)"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" id="stitching">
+                          <div class="pq-service-box pq-style-1">
+                            <div class="pq-service-media">
+                              <img
+                                decoding="async"
+                                src="images/textile/satin.jpg"
+                                alt="servicebox"
+                              />
+                            </div>
+                            <div class="pq-service-box-info">
+                              <div class="pq-service-icon">
+                                <i class="flaticon-pin"></i>
+                              </div>
+                              <h4 class="pq-service-box-title">
+                                Satin Weaving
+                              </h4>
+                              <p class="pq-service-box-description">
+                                textiles that cannot rental tsestr be washed
+                                with wate These servi typically used wide range
+                                of products for delicate
+                              </p>
+                              <div class="pq-btn-container">
+                                <a class="pq-button pq-button-link" href="javascript:void(0)" onclick="openModal('modal-weaving')" tabindex="0">
+
+                               
+                                  <div class="pq-button-block">
+                                    <span class="pq-button-text"
+                                      >Read more</span
+                                    >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="pq-svg-arrow"
+                                      width="34.899"
+                                      height="14.585"
+                                      viewBox="0 0 34.899 14.585"
+                                    >
+                                      <path
+                                        d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                                        transform="translate(34.399 14.056) rotate(180)"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" id="treatment">
+                          <div class="pq-service-box pq-style-1">
+                            <div class="pq-service-media">
+                              <img
+                                decoding="async"
+                                src="images/textile/fabric treatment.jpg"
+                                alt="servicebox"
+                              />
+                            </div>
+                            <div class="pq-service-box-info">
+                              <div class="pq-service-icon">
+                                <i class="flaticon-scissors-1"></i>
+                              </div>
+                              <h4 class="pq-service-box-title">
+                                fabric treatment
+                              </h4>
+                              <p class="pq-service-box-description">
+                                textiles that cannot rental tsestr be washed
+                                with wate These servi typically used wide range
+                                of products for delicate
+                              </p>
+                              <div class="pq-btn-container">
+                                <a class="pq-button pq-button-link" href="javascript:void(0)" onclick="openModal('modal-treatment')" tabindex="0">
+
+                                  <div class="pq-button-block">
+                                    <span class="pq-button-text"
+                                      >Read more</span
+                                    >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="pq-svg-arrow"
+                                      width="34.899"
+                                      height="14.585"
+                                      viewBox="0 0 34.899 14.585"
+                                    >
+                                      <path
+                                        d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                                        transform="translate(34.399 14.056) rotate(180)"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="pq-thumbs-column">
+                    <div class="pq-thumbs-column-inner">
+                      <div class="slick-slider-thumb">
+                        <div class="item">
+                          <h4 class="h4">
+                            <span><i class="flaticon-sewing-machine"></i></span>
+                            fabric dyeing
+                          </h4>
+                        </div>
+                        <div class="item">
+                          <h4 class="h4">
+                            <span
+                              ><i class="flaticon-textile-printing"></i
+                            ></span>
+                            digital printing
+                          </h4>
+                        </div>
+                        <div class="item">
+                          <h4 class="h4">
+                            <span
+                              ><i class="flaticon-sewing-machine-1"></i
+                            ></span>
+                            Satin Weaving
+                          </h4>
+                        </div>
+                        <div class="item">
+                          <h4 class="h4">
+                            <span><i class="flaticon-scissors-1"></i></span>
+                            fabric treatment
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="modal-overview" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-overview')">&times;</span>
+        <h2>Textiles Overview</h2>
+        <p>Textiles are a fundamental aspect of daily life...</p>
+      </div>
+    </div>
+    
+    <div id="modal-dyeing" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-dyeing')">&times;</span>
+        <h2>Fabric Dyeing</h2>
+        <p>Details about fabric dyeing...</p>
+      </div>
+    </div>
+    
+    <div id="modal-printing" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-printing')">&times;</span>
+        <h2>Digital Printing</h2>
+        <p>Details about digital printing...</p>
+      </div>
+    </div>
+    <div id="modal-weaving" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-weaving')">&times;</span>
+        <h2>Satin Weaving</h2>
+        <p>Details about satin weaving...</p>
+      </div>
+    </div>
+    
+    <!-- Fabric Treatment Modal -->
+    <div id="modal-treatment" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-treatment')">&times;</span>
+        <h2>Fabric Treatment</h2>
+        <p>Details about fabric treatment...</p>
+      </div>
+    </div>
+    
+    <!-- Add more modals as needed -->
+    <style>
+   
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for visibility */
+    }
+    .modal-content h3{
+
+font-family: "Roboto Condensed", sans-serif;  }
+
+
+    .modal-content {
+      font-family: "Poppins", sans-serif;
+
+      background-color: #fff;
+      margin: 10% auto; /* Center modal vertically and horizontally */
+      padding: 20px;
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+      width: 90%; /* Default width */
+      max-width: 600px; /* Maximum width for larger screens */
+      position: relative; /* For close button positioning */
+      z-index: 10000;
+    }
+    
+    .close {
+      color: #aaa;
+      position: absolute;
+      right: 16px; /* Positioning the close button */
+      top: 8px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+    }
+    
+    /* Media queries for responsiveness */
+    @media (max-width: 600px) {
+      .modal-content {
+        margin: 5% auto; /* Reduce margin on smaller screens */
+        padding: 15px; /* Adjust padding */
+      }
+    
+      .close {
+        font-size: 20px; /* Smaller close button for smaller screens */
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .modal-content {
+        width: 95%; /* Make modal almost full width on very small screens */
+      }
+    }
+  </style>
+    
+    <!-- Modal JavaScript -->
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+      }
+    
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+      }
+    
+      window.onclick = function(event) {
+        var modals = document.getElementsByClassName('modal');
+        for (var i = 0; i < modals.length; i++) {
+          if (event.target == modals[i]) {
+            modals[i].style.display = 'none';
+          }
+        }
+      }
+    </script>
+    <!-- Service -->
+
+    <center>
+      <h5 class="circleheading" >
+        WORKING FUNDAMENTAL
+        <div class="underline"></div>
+      </h5>
+    </center>
+    <div class="container-circle"  data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" >
+      <div class="circle-container" >
+        <div class="circle" onclick="openModal('modal-research')">
+          <img src="images/textile/research.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Research & Development</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-design')">
+          <img src="images/textile/design.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Design</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-costing')">
+          <img src="images/textile/costing.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Costing</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-analysis')">
+          <img src="images/textile/analysis.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Analysis</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-operations')">
+          <img src="images/textile/operations.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Operations</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-timing')">
+          <img src="images/textile/time.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Timing</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-production')">
+          <img src="images/textile/production.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Production</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-quality')">
+          <img src="images/textile/quality.png" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Quality Assurance</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-logistics')">
+          <img src="images/textile/logistic-trolley_17803527.png" style="height: 80px" alt="" />
+        </div>
+        <h5 class="circle-heading-2">Logistics</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-supply-chain')">
+          <img src="images/textile/supply-chain-management.png" style="height: 80px" />
+        </div>
+        <h5 class="circle-heading-2">Supply Chain</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-sewing')">
+          <img src="images/textile/sewing-machine.png" style="height: 80px" />
+        </div>
+        <h5 class="circle-heading-2">Sewing</h5>
+      </div>
+    
+      <div class="circle-container">
+        <div class="circle" onclick="openModal('modal-textiles')">
+          <img src="images/textile/textile_9170887.png" style="height: 80px" />
+        </div>
+        <h5 class="circle-heading-2">Textiles</h5>
+      </div>
+    </div>
+    
+    <!-- Modals -->
+    <div id="modal-research" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-research')">&times;</span>
+        <h2>Research & Development</h2>
+        <p>Details about Research & Development...</p>
+      </div>
+    </div>
+    
+    <div id="modal-design" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-design')">&times;</span>
+        <h2>Design</h2>
+        <p>Details about Design...</p>
+      </div>
+    </div>
+    
+    <div id="modal-costing" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-costing')">&times;</span>
+        <h2>Costing</h2>
+        <p>Details about costing...</p>
+      </div>
+    </div>
+    
+    <div id="modal-analysis" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-analysis')">&times;</span>
+        <h2>Analysis</h2>
+        <p>Details about Analysis...</p>
+      </div>
+    </div>
+    
+    <div id="modal-operations" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-operations')">&times;</span>
+        <h2>Operations</h2>
+        <p>Details about Operations...</p>
+      </div>
+    </div>
+    
+    <div id="modal-timing" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-timing')">&times;</span>
+        <h2>Timing</h2>
+        <p>Details about Timing...</p>
+      </div>
+    </div>
+    
+    <div id="modal-production" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-production')">&times;</span>
+        <h2>Production</h2>
+        <p>Details about Production...</p>
+      </div>
+    </div>
+    
+    <div id="modal-quality" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-quality')">&times;</span>
+        <h2>Quality Assurance</h2>
+        <p>Details about Quality Assurance...</p>
+      </div>
+    </div>
+    
+    <div id="modal-logistics" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-logistics')">&times;</span>
+        <h2>Logistics</h2>
+        <p>Details about Logistics...</p>
+      </div>
+    </div>
+    
+    <div id="modal-supply-chain" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-supply-chain')">&times;</span>
+        <h2>Supply Chain</h2>
+        <p>Details about Supply Chain...</p>
+      </div>
+    </div>
+    
+    <div id="modal-sewing" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-sewing')">&times;</span>
+        <h2>Sewing</h2>
+        <p>Details about Sewing...</p>
+      </div>
+    </div>
+    
+    <div id="modal-textiles" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-textiles')">&times;</span>
+        <h2>Textiles</h2>
+        <p>Details about Textiles...</p>
+      </div>
+    </div>
+    
+    <!-- Modal Styles -->
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .modal-content h3{
+
+font-family: "Roboto Condensed", sans-serif;  }
+
+      .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        width: 80%;
+        font-family: "Poppins", sans-serif;
+        max-width: 600px;
+      }
+    
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+    
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+    
+    <!-- Modal JavaScript -->
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+    
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+    
+      // Close the modal when user clicks outside of the modal content
+      window.onclick = function(event) {
+        var modals = document.getElementsByClassName("modal");
+        for (var i = 0; i < modals.length; i++) {
+          if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+          }
+        }
+      };
+    </script>
+    
+   
+    <section
+      class="pq-bg-dark process wow animated fadeInUp" id="production"
+      style="background-color: #e5e4e2"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="pq-section-title pq-style-1 text-center">
+              <h5 class="pq-section-main-title" style="color: #333">
+                We Give Top Production From Every Angle
+
+                <div class="underline"></div>
+              </h5>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="pq-circle-progress pq-circle-progress-style-1">
+              <div
+                class="pq-circle-progress-bar"
+                data-size="180"
+                data-thickness="10"
+                data-skill-level="65"
+                data-empty-color="#F5F5F5"
+                data-fill-color="#F56800"
+              >
+                <span class="pq-progress-count">65%</span>
+              </div>
+              <div class="pq-progress-details">
+                <h5 class="pq-progress-title">fabric design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 mt-4 mt-md-0">
+            <div class="pq-circle-progress pq-circle-progress-style-1">
+              <div
+                class="pq-circle-progress-bar"
+                data-size="180"
+                data-thickness="10"
+                data-skill-level="75"
+                data-empty-color="#F5F5F5"
+                data-fill-color="#F56800"
+              >
+                <span class="pq-progress-count">75%</span>
+              </div>
+              <div class="pq-progress-details">
+                <h5 class="pq-progress-title">trusted clients</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 mt-4 mt-xl-0">
+            <div class="pq-circle-progress pq-circle-progress-style-1">
+              <div
+                class="pq-circle-progress-bar"
+                data-size="180"
+                data-thickness="10"
+                data-skill-level="85"
+                data-empty-color="#F5F5F5"
+                data-fill-color="#F56800"
+              >
+                <span class="pq-progress-count">85%</span>
+              </div>
+              <div class="pq-progress-details">
+                <h5 class="pq-progress-title">experience years</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 mt-4 mt-xl-0">
+            <div class="pq-circle-progress pq-circle-progress-style-1">
+              <div
+                class="pq-circle-progress-bar"
+                data-size="180"
+                data-thickness="10"
+                data-skill-level="55"
+                data-empty-color="#F5F5F5"
+                data-fill-color="#F56800"
+              >
+                <span class="pq-progress-count">55%</span>
+              </div>
+              <div class="pq-progress-details">
+                <h5 class="pq-progress-title">Per day production</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section
+      class="client pq-bg-dark pq-bg-img-4 pq-pb-500 wow animated fadeInUp"
+      style="background-color: #dedede"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 pq-border-right">
+            <div class="pq-counter pq-counter-default">
+              <div class="pq-counter-num-prefix">
+                <h5
+                  class="timer"
+                  data-to="6050"
+                  data-speed="5000"
+                  style="color: black; font-family: Cinzel, serif"
+                >
+                  6050
+                </h5>
+              </div>
+              <span
+                class="pq-counter-title"
+                style="
+                  color: black;
+                  font-family: Cinzel, serif;
+                  letter-spacing: 1px;
+                "
+                >Satisfied clients</span
+              >
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8 mt-4 mt-md-0 pq-ps-90">
+            <div class="pq-client-box pq-client-style-1">
+              <div
+                class="owl-carousel owl-loaded owl-drag"
+                data-dots="false"
+                data-nav="false"
+                data-desk_num="5"
+                data-lap_num="3"
+                data-tab_num="2"
+                data-mob_num="2"
+                data-mob_sm="2"
+                data-autoplay="false"
+                data-loop="true"
+                data-margin="30"
+              >
+                <div class="item">
+                  <div class="pq-client-box pq-style-1" id="logo-container">
+                    <a>
+                      <img
+                        decoding="async"
+                        src="images/textile/logo11.png"
+                        alt="pq-client-img"
+                        class="pq-client-img"
+                      />
+                      <img
+                        decoding="async"
+                        src="images/textile/logo12.png"
+                        alt="pq-client-img"
+                        class="pq-client-hover-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-client-box pq-style-1" id="logo-container">
+                    <a>
+                      <img
+                        decoding="async"
+                        src="images/textile/logo12.png"
+                        alt="pq-client-img"
+                        class="pq-client-img"
+                      />
+                      <img
+                        decoding="async"
+                        src="images/textile/logo13.png"
+                        alt="pq-client-img"
+                        class="pq-client-hover-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-client-box pq-style-1" id="logo-container">
+                    <a>
+                      <img
+                        decoding="async"
+                        src="images/textile/logo13.png"
+                        alt="pq-client-img"
+                        class="pq-client-img"
+                      />
+                      <img
+                        decoding="async"
+                        src="images/textile/logo14.png"
+                        alt="pq-client-img"
+                        class="pq-client-hover-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-client-box pq-style-1" id="logo-container">
+                    <a>
+                      <img
+                        decoding="async"
+                        src="images/textile/logo14.png"
+                        alt="pq-client-img"
+                        class="pq-client-img"
+                      />
+                      <img
+                        decoding="async"
+                        src="images/textile/logo15.png"
+                        alt="pq-client-img"
+                        class="pq-client-hover-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-client-box pq-style-1" id="logo-container">
+                    <a>
+                      <img
+                        decoding="async"
+                        src="images/textile/logo15.png"
+                        alt="pq-client-img"
+                        class="pq-client-img"
+                      />
+                      <img
+                        decoding="async"
+                        src="images/textile/logo11.png"
+                        alt="pq-client-img"
+                        class="pq-client-hover-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-client-box pq-style-1" id="logo-container">
+                    <a>
+                      <img
+                        decoding="async"
+                        src="images/textile/logo14.png"
+                        alt="pq-client-img"
+                        class="pq-client-img"
+                      />
+                      <img
+                        decoding="async"
+                        src="images/textile/logo15.png"
+                        alt="pq-client-img"
+                        class="pq-client-hover-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 p-0">
+            <div class="divider pq-pt-60"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client -->
+   
+    <!-- Product -->
+   
+    <section
+      class="product pq-bg-transparent pq-mt-n-500 pb-0"
+      style="background-color: #d4d3c8"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="pq-section-title pq-style-1 text-center">
+              <h5 class="pq-section-main-title" style="color: #000000">
+                the textiles product appear
+                <div class="underline"></div>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 pq-px-30">
+            <div class="pq-portfoliobox pq-portfoliobox-style-1 pq-slider-page">
+              <div
+                class="owl-carousel owl-loaded owl-drag"
+                data-dots="true"
+                data-nav="false"
+                data-desk_num="4"
+                data-lap_num="3"
+                data-tab_num="2"
+                data-mob_num="1"
+                data-mob_sm="1"
+                data-autoplay="false"
+                data-loop="false"
+                data-margin="30"
+              >
+                <div class="item">
+                  <div class="pq-portfoliobox-1 pq-hover-slide">
+                    <div class="pq-portfolio-block">
+                      <div class="pq-portfolio-img">
+                        <a href="textiles-and-fashion.html">
+                          <img
+                            decoding="async"
+                            src="images/textile/jeans.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="pq-portfolio-info">
+                        <h5 class="pq-portfolio-style-1-title">
+                          <a href="#">Jeans & pants</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-portfoliobox-1 pq-hover-slide">
+                    <div class="pq-portfolio-block">
+                      <div class="pq-portfolio-img">
+                        <a href="textiles-and-fashion.html">
+                          <img
+                            decoding="async"
+                            src="images/textile/YARN.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="pq-portfolio-info">
+                        <h5 class="pq-portfolio-style-1-title">
+                          <a href="#">Sweat shirts</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-portfoliobox-1 pq-hover-slide">
+                    <div class="pq-portfolio-block">
+                      <div class="pq-portfolio-img">
+                        <a href="textiles-and-fashion.html">
+                          <img
+                            decoding="async"
+                            src="images/textile/towel.jpeg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="pq-portfolio-info">
+                        <h5 class="pq-portfolio-style-1-title">
+                          <a href="#">Towels</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-portfoliobox-1 pq-hover-slide">
+                    <div class="pq-portfolio-block">
+                      <div class="pq-portfolio-img">
+                        <a href="textiles-and-fashion.html">
+                          <img
+                            decoding="async"
+                            src="images/textile/bedsheeet.jpeg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="pq-portfolio-info">
+                        <h5 class="pq-portfolio-style-1-title">
+                          <a href="#">Bedsheets</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-portfoliobox-1 pq-hover-slide">
+                    <div class="pq-portfolio-block">
+                      <div class="pq-portfolio-img">
+                        <a href="textiles-and-fashion.html">
+                          <img
+                            decoding="async"
+                            src="images/textile/fabric.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="pq-portfolio-info">
+                        <h5 class="pq-portfolio-style-1-title">
+                          <a href="#">Shirts</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+<style>
+.pq-grid {
+  display: flex;
+  flex-wrap: wrap; /* Ensures grid items wrap onto new lines if needed */
+  justify-content: space-between; /* Provides space between items */
+  padding: 0 15px;
+}
+
+.pq-grid-item {
+  width: calc(25% - 30px); /* Each grid item will take 25% of the row, minus the padding */
+  margin: 15px 0; /* Adds spacing between the items vertically */
+  box-sizing: border-box;
+}
+
+.pq-portfoliobox-1 {
+  background-color: #f9f9f9; /* Optional background color */
+  overflow: hidden;
+  border-radius: 10px; /* Optional: Add rounded corners for a modern look */
+}
+
+.pq-portfolio-img {
+  width: 100%;
+  height: 250px; /* Fixed height for uniformity */
+  overflow: hidden; /* Prevents image overflow */
+}
+
+.pq-portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the space without stretching */
+  display: block;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 1000px) {
+  .pq-grid-item {
+    width: calc(50% - 30px); /* 2 items per row for medium screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pq-grid-item {
+    width: 100%; /* 1 item per row for mobile screens */
+  }
+}
+
+
+</style>
+    <section class="four-column" id="gallery">
+      <div class="pq-section-title pq-style-1 text-center">
+        <h5 class="pq-section-main-title" style="color: #000000">
+          Products detail
+          <div class="underline"></div>
+        </h5>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="pq-filters">
+              <div class="filters pq-filter-button-group">
+                <ul>
+                  <li class="active pq-filter-btn" data-filter="*">All</li>
+                  <li class="pq-filter-btn" data-filter=".8">Home Textile</li>
+                  <li class="pq-filter-btn" data-filter=".4">Towel</li>
+                  <li class="pq-filter-btn" data-filter=".6">Men Clothing</li>
+                  <li class="pq-filter-btn" data-filter=".5">Denim Textile</li>
+                  <li class="pq-filter-btn" data-filter=".7">Kids wear</li>
+                </ul>
+              </div>
+            </div>
+            <div class="pq-grid" data-next_items="4" data-initial_items="6">
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-6 6">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/shirt1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Craft Decor</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html"
+                        >Textiles and Fashion</a
+                      >
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 5">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/jeans2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Cotton Fabric</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 8">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/home1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 5">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/jeans3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Cotton Fabric</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 7">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/kid1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 8">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/home2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 6">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/shirt2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Craft Decor</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Green Shutters</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-6 6">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/shirt3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Clothing</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Chiffon Curtains</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 6">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/shirt4.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Accessories</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Colorful Fabric</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 6">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/shirt5.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Traditional Crafts</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Zipper Textile</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 5">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/jeansq.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 4">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/home3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 4">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/home4.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="pq-grid-item pq-filter-items pq-col-3 ipt-lg-3 4">
+                <div class="pq-portfoliobox-1 pq-hover-fade">
+                  <div class="pq-portfolio-img">
+                    <a href="textiles-and-fashion.html">
+                      <img
+                        decoding="async"
+                        src="images/gallery/home5.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="pq-portfolio-info">
+                    <div class="pq-portfolio-style-1-tag">
+                      <a href="textiles-and-fashion.html">Ethnic Textile</a>
+                    </div>
+                    <h5>
+                      <a href="textiles-and-fashion.html">Fashion Project</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pq-btn-load-container text-center">
+              <a id="showMore" class="pq-button pq-button-flat" href="#">
+                <span class="text">Load More</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="pq-svg-arrow"
+                  width="34.899"
+                  height="14.585"
+                  viewBox="0 0 34.899 14.585"
+                >
+                  <path
+                    d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                    transform="translate(34.399 14.056) rotate(180)"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<style>
+  .pq-testimonial-content{
+    font-family: "Poppins", sans-serif; 
+    letter-spacing: 1px;
+  }
+</style>
+
+    <section class="testimonial pq-bg-dark pq-bg-img-7 pb-xl-0" id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="pq-testimonial-image-box">
+              <img src="images/textile/review.jpg" alt="" />
+              <div class="pq-quote">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="pq-icon-box pq-style-2">
+                <div class="pq-icon">
+                  <i class="flaticon-sewing-machine"></i>
+                </div>
+                <div class="pq-icon-box-content">
+                  <h6 class="pq-icon-box-title">Over All Rating</h6>
+                  <p class="pq-icon-box-description">Based on 2555 Reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 mt-4 mt-xl-0 pq-ps-60">
+            <div class="pq-section-title pq-style-1 pq-mb-30">
+              
+              <h5 class="pq-section-main-title" style="color: white">
+                what are happy clients say
+                <div class="underline"></div>
+              </h5>
+              </div>
+            <div class="pq-testimonial-box-slider pq-style-2">
+              <div
+                class="owl-carousel owl-loaded owl-drag"
+                data-dots="true"
+                data-nav="false"
+                data-autoplay="false"
+                data-loop="true"
+                data-desk_num="1"
+                data-lap_num="1"
+                data-tab_num="1"
+                data-mob_num="1"
+              >
+                <div class="item">
+                  <div class="pq-testimonial-box pq-style-2">
+                    <div class="pq-testimonial-content">
+                      <p>
+                        Textiles are materials made from fibers or yarn, and
+                        they are used to create a wide range of products such as
+                        clothing, household items, and industrial goods. The
+                        fibers used in textiles can be natural, such as cotton,
+                        wool, and silk, or synthetic, such as polyester, nylon,
+                        and acrylic. Textiles can be woven, knitted, or
+                        crocheted, and they can be dyed.
+                      </p>
+                    </div>
+                    <div class="pq-testimonial-info">
+                      <div class="pq-testimonial-meta">
+                        <div class="pq-testimonial-star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class="pq-testimonial-img">
+                          <img
+                            decoding="async"
+                            src="images/textile/john.jpg"
+                            alt="testimonial-img"
+                          />
+                        </div>
+                        <div class="pq-testimonial-data">
+                          <h5>alex john martin</h5>
+                          <span>Photographer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-testimonial-box pq-style-2">
+                    <div class="pq-testimonial-content">
+                      <p>
+                        Textiles are materials made from fibers or yarn, and
+                        they are used to create a wide range of products such as
+                        clothing, household items, and industrial goods. The
+                        fibers used in textiles can be natural, such as cotton,
+                        wool, and silk, or synthetic, such as polyester, nylon,
+                        and acrylic. Textiles can be woven, knitted, or
+                        crocheted, and they can be dyed.
+                      </p>
+                    </div>
+                    <div class="pq-testimonial-info">
+                      <div class="pq-testimonial-meta">
+                        <div class="pq-testimonial-star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class="pq-testimonial-img">
+                          <img
+                            decoding="async"
+                            src="images/textile/client2.jpg"
+                            alt="testimonial-img"
+                          />
+                        </div>
+                        <div class="pq-testimonial-data">
+                          <h5>Leia Organa</h5>
+                          <span>Fashion Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-testimonial-box pq-style-2">
+                    <div class="pq-testimonial-content">
+                      <p>
+                        Textiles are materials made from fibers or yarn, and
+                        they are used to create a wide range of products such as
+                        clothing, household items, and industrial goods. The
+                        fibers used in textiles can be natural, such as cotton,
+                        wool, and silk, or synthetic, such as polyester, nylon,
+                        and acrylic. Textiles can be woven, knitted, or
+                        crocheted, and they can be dyed.
+                      </p>
+                    </div>
+                    <div class="pq-testimonial-info">
+                      <div class="pq-testimonial-meta">
+                        <div class="pq-testimonial-star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class="pq-testimonial-img">
+                          <img
+                            decoding="async"
+                            src="images/textile/client3.jpg"
+                            alt="testimonial-img"
+                          />
+                        </div>
+                        <div class="pq-testimonial-data">
+                          <h5>David K. Morris</h5>
+                          <span>Photographer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="pq-testimonial-box pq-style-2">
+                    <div class="pq-testimonial-content">
+                      <p>
+                        Textiles are materials made from fibers or yarn, and
+                        they are used to create a wide range of products such as
+                        clothing, household items, and industrial goods. The
+                        fibers used in textiles can be natural, such as cotton,
+                        wool, and silk, or synthetic, such as polyester, nylon,
+                        and acrylic. Textiles can be woven, knitted, or
+                        crocheted, and they can be dyed.
+                      </p>
+                    </div>
+                    <div class="pq-testimonial-info">
+                      <div class="pq-testimonial-meta">
+                        <div class="pq-testimonial-star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class="pq-testimonial-img">
+                          <img
+                            decoding="async"
+                            src="images/textile/john.jpg"
+                            alt="testimonial-img"
+                          />
+                        </div>
+                        <div class="pq-testimonial-data">
+                          <h5>alex john martin</h5>
+                          <span>Photographer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  <!-- Provide -->
+
+  <!-- Team -->
+  <section class="team py-5">
+     
+  </section>
+
+  <footer id="pq-footer">
+    <div class="pq-footer-style-1">
+        <div class="pq-footer-top">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="widget">
+                            <h4 class="footer-title">About TexSourcing</h4>
+                            <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
+                        </div>
+                    </div>
+                  
+                    <div class="col-xl-4  col-md-6">
+                        <div class="widget">
+                            <h4 class="footer-title">Usefull Links</h4>
+                            <div class="menu-useful-links-container">
+                                <ul id="menu-useful-links" class="menu">
+                                    <li class="menu-item">
+                                        <a href="#aboutus">About Us</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#fundamental">Our Services</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#gallery">Gallery</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#production">Our company</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4  col-md-6">
+                        <div class="widget">
+                            <div class="pq-subscribe">
+                                <div class="pq-subscribe-details">
+                                    <h4 class="footer-title">our newsletter</h4>
+                                    <p>Sign up for the latest deals products news and more from us.</p>
+                                </div>
+                            </div>
+                            <div class="pq-subscribe-from">
+                                <form class="pq-sign-up-form">
+                                    <input type="email" name="EMAIL" placeholder="Your email address" class="form-control">
+                                    <input class="submit" type="submit" value="Sign up">
+                                    <i class="ion-ios-paperplane"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-copyright-footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <div class="pq-footer-social">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <span class="pq-copyright"> Proudly Powered By Textica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- Back To Top -->
+    <div id="back-to-top">
+      <a class="top" id="top" href="#top">
+        <i class="ion-ios-arrow-up"></i>
+      </a>
+    </div>
+    <!-- Back To Top -->
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Simplebar js -->
+    <script src="js/simplebar.min.js"></script>
+    <!-- Slick Slider js -->
+    <script src="js/slick.js"></script>
+    <!-- Circluar Progressbar js -->
+    <script src="js/circle-progress.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </body>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+$(document).ready(function () {
+    $(".owl-carousel").each(function () {
+        var $this = $(this);
+
+        // Initialize the carousel using the data-* attributes if they exist, else use fallback defaults
+        $this.owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: $this.data("mob_num") !== undefined ? $this.data("mob_num") : 1, // For small devices
+                },
+                600: {
+                    items: $this.data("mob_num") !== undefined ? $this.data("mob_num") : 1, // For medium devices
+                },
+                768: {
+                    items: $this.data("medium_num") !== undefined ? $this.data("medium_num") : 2, // For medium screens
+                },
+                1000: {
+                    items: $this.data("desk_num") !== undefined ? $this.data("desk_num") : 4, // For large devices
+                },
+            },
+        });
+    });
+});
+    $(".burger, .overlay").click(function () {
+      $(".burger").toggleClass("clicked");
+      $(".overlay").toggleClass("show");
+      $("nav").toggleClass("show");
+      $("body").toggleClass("overflow");
+    });
+    $("nav ul li a").click(function () {
+  $(".burger").removeClass("clicked");
+  $(".overlay").removeClass("show");
+  $("nav").removeClass("show");
+  $("body").removeClass("overflow");
+});
+
+    $(function () {
+      var header = $(".navbar");
+
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+          header.addClass("scrolled");
+          header.removeClass("navbar-inverse");
+        } else {
+          header.removeClass("scrolled");
+        }
+      });
+    });
+  </script>
+
+  <!-- Mirrored from shaikatknitwear.com/html/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Sep 2024 14:08:31 GMT -->
+</html>
